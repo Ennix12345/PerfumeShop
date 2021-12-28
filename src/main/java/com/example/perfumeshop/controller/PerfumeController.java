@@ -6,16 +6,13 @@ import com.example.perfumeshop.entities.Perfume;
 import com.example.perfumeshop.repositories.BuyerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/perfumes")

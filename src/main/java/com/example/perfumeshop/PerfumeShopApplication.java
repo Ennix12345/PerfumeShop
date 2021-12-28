@@ -3,7 +3,6 @@ import com.example.perfumeshop.entities.Basket;
 import com.example.perfumeshop.entities.Buyer;
 import com.example.perfumeshop.entities.Order;
 import com.example.perfumeshop.entities.Perfume;
-import com.example.perfumeshop.repositories.BasketRepository;
 import com.example.perfumeshop.repositories.BuyerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
