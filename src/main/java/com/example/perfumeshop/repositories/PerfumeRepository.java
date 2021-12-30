@@ -13,9 +13,9 @@ public interface PerfumeRepository extends JpaRepository<Perfume, Long> {
     @Query(value = "select p from Perfume p where p.name =:name")
     Perfume findByName(@Param("name") String name);
 
-    @Query(value = "select p from Perfume p where p.brand in :brands")
-    Perfume findByBrand(@Param("brands") String brands);
+    @Query(value = "select p from Perfume p where p.brand =:brand")
+    Perfume findByBrand(@Param("brand") String brand);
 
-    @Query(value = "select p from Perfume p where p.sex =:sex")
+    @Query(value = "select p from Perfume p where p.sex in :sex")
     List<Perfume> findBySex(@Param("sex") String sex);
 }
